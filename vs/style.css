@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #000000;
+}
+
+#fontLevel1 {
+  display: none;
+  background-image: url(font.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  height: 1000px;
+  border: 2px black solid;
+}
+
+#boss {
+  transform: rotate(1deg);
+  margin-top: 200px;
+  margin-left: 50px;
+  height: 600px;
+}
+
+#attack {
+  position: absolute;
+  font-size: 20pt;
+  margin-top: 70px;
+  margin-left: 410px;
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(221, 75, 75);
+  border-radius: 10px;
+}
+
+#attack:hover {
+  background-color: red;
+}
+
+#attack:active {
+  background-color: darkred;
+}
+
+#bossHP {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  font-size: 20pt;
+}
+
+#playerHP {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 800px;
+  color: white;
+  font-size: 20pt;
+}
+
+#win {
+  display: none;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  font-size: 80pt;
+  color: rgb(49, 255, 49);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#lose {
+  display: none;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  font-size: 80pt;
+  color: rgb(255, 49, 49);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#healimg {
+  z-index: 1;
+  position: absolute;
+  margin-left: 810px;
+  margin-top: 30px;
+  width: 100px;
+  border: 1px pink solid;
+  border-radius: 10px;
+}
+
+#healimg:hover {
+  background-color: pink;
+}
+
+#healimg:active {
+  background-color: rgb(230, 174, 183);
+}
+
+#healqty {
+  display: none;
+  z-index: 3;
+  font-size: 15pt;
+  color: white;
+  position: absolute;
+  margin-left: 795px;
+  margin-top: 864px;
+}
+
+#start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  position: absolute;
+  border: none;
+  width: 300px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+
+  button {
+    font-size: 40pt;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+#next {
+  cursor: pointer;
+  display: none;
+  z-index: 8;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+  color: rgb(230, 230, 230);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  margin-top: 250px;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+}
+
+/* 2й Уровень  */
+
+#boss2 {
+  transform: rotate(1deg);
+  margin-top: 250px;
+  margin-left: 300px;
+  height: 550px;
+}
+
+#bossHP2 {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  font-size: 20pt;
+}
+
+#fontLevel2 {
+  display: none;
+  background-image: url(font2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  height: 1000px;
+  border: 2px black solid;
+}
+
+#healimg2 {
+  z-index: 1;
+  position: absolute;
+  margin-left: 810px;
+  margin-top: 30px;
+  width: 100px;
+  border: 1px pink solid;
+  border-radius: 10px;
+}
+
+#healimg2:hover {
+  background-color: pink;
+}
+
+#healimg2:active {
+  background-color: rgb(230, 174, 183);
+}
+
+/* #healqty2 {
+  z-index: 3;
+  font-size: 15pt;
+  color: white;
+  position: absolute;
+  margin-left: 885px;
+  margin-top: 105px;
+} */
+
+#playerHP2 {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 800px;
+  color: white;
+  font-size: 20pt;
+}
+
+#attack2 {
+  position: absolute;
+  font-size: 20pt;
+  margin-top: 70px;
+  margin-left: 410px;
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(221, 75, 75);
+  border-radius: 10px;
+}
+
+#attack2:hover {
+  background-color: red;
+}
+
+#attack2:active {
+  background-color: darkred;
+}
