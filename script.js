@@ -43,6 +43,8 @@ function damage() {                                       // УРОН БОССА
   if (pHP < 0) {
     lose.style.display = "flex";
     clearTimeout(health);
+    document.getElementById("heal").disabled = true;
+    document.getElementById("attack").disabled = true;
   } else {
     lose.style.display = "none";
     health = setTimeout(damage, 1000);
@@ -106,6 +108,8 @@ function damage2() {                                       // УРОН БОСС�
   pHP--;
   if (pHP < 0) {
     lose.style.display = "flex";
+    document.getElementById("heal2").disabled = true;
+    document.getElementById("attack2").disabled = true;
     clearTimeout(health);
   } else {
     lose.style.display = "none";
